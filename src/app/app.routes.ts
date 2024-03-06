@@ -4,7 +4,7 @@ export const routes: Routes = [
 
     {
         path: '',
-        loadComponent: () => import('./pages/pages/pages.component'), 
+        loadComponent: () => import('./pages/pages.component'), 
         children: [
             {
                 path: 'dashboard',
@@ -17,6 +17,10 @@ export const routes: Routes = [
             {
                 path: 'grafica1',
                 loadComponent: () => import('./pages/grafica1/grafica1.component'),
+            },
+            {
+                path: 'account-settings',
+                loadComponent: () => import('./pages/account-settings/account-settings.component'),
             },
             {
                 path: '',
