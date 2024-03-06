@@ -36,7 +36,8 @@
                     <ul aria-expanded="false">
                         <li>
                             @for (subMenuItem of item.submenu; track $index) {
-                            <a [routerLink]="subMenuItem.url">
+                            <a [routerLink]="subMenuItem.url"
+                                routerLinkActive="active">
                                 {{ subMenuItem.titulo }}
                             </a>
                         }

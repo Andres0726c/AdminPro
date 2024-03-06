@@ -9,18 +9,32 @@ export const routes: Routes = [
             {
                 path: 'dashboard',
                 loadComponent: () => import('./pages/dashboard/dashboard.component'),
+                data: { titulo: 'Dashboard' }
             },
             {
                 path: 'progress',
                 loadComponent: () => import('./pages/progress/progress.component'),
+                data: { titulo: 'Progress' }
             },
             {
                 path: 'grafica1',
                 loadComponent: () => import('./pages/grafica1/grafica1.component'),
+                data: { titulo: 'Gráficas' }
             },
             {
-                path: 'account-settings',
+                path: 'Ajuste de tema',
                 loadComponent: () => import('./pages/account-settings/account-settings.component'),
+                data: { titulo: 'Dashboard' }
+            },
+            {
+                path: 'promesas',
+                loadComponent: () => import('./pages/promesas/promesas.component'),
+                data: { titulo: 'Promesas' }
+            },
+            {
+                path: 'rxjs',
+                loadComponent: () => import('./pages/rxjs/rxjs.component'),
+                data: { titulo: 'RxJs' }
             },
             {
                 path: '',
